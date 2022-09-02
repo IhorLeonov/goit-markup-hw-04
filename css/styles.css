@@ -10,6 +10,7 @@ body {
   --primery-accent-color: #2196f3;
   --primery-title-color: #212121;
   --primery-white-color: #ffffff;
+  --logo-link-color: #afb1b8;
 }
 /* reset */
 h1,
@@ -107,10 +108,15 @@ img {
   padding-top: 24px;
   padding-bottom: 25px;
 }
+.contact-box-img {
+  fill: currentColor;
+}
 .contact-link {
-  display: block;
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
+  gap: 10px;
+  align-items: center;
 
   color: var(--primery-text-color);
   font-weight: 500;
@@ -214,6 +220,19 @@ img {
   align-items: center;
   align-items: flex-start;
 }
+.benefits-box {
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+.benefits-box-img {
+  margin-left: 100px;
+  margin-top: 25px;
+  width: 70px;
+  height: 70px;
+}
 .benefits-title {
   margin-bottom: 10px;
   color: var(--primery-title-color);
@@ -260,6 +279,7 @@ img {
   text-align: center;
 }
 .team-box {
+  background-color: var(--primery-white-color);
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -280,6 +300,7 @@ img {
 .team-desc {
   line-height: calc(19 / 16);
   text-align: center;
+  margin-bottom: 28px;
 }
 .team-section {
   background: #f5f4fa;
@@ -291,8 +312,46 @@ img {
   margin-left: 30px;
   align-items: center;
 }
-/* Portfolio */
+.socials-list {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding-left: 0;
+}
+.socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+  width: 44px;
+  height: 44px;
+  background-color: var(--primery-white-color);
+  border-radius: 50%;
+}
+.socials-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--logo-link-color);
+}
+.socials-link:hover,
+.socials-link:focus {
+  background-color: var(--primery-accent-color);
+}
+.socials-link:hover .socials-icon,
+.socials-link:focus .socials-icon {
+  fill: var(--primery-white-color);
+}
+/* Clients */
+.clients-title {
+  margin-bottom: 50px;
+
+  color: var(--primery-title-color);
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+}
+/* Portfolio */
 .filter-list {
   margin-bottom: 34px;
 }
@@ -320,6 +379,10 @@ img {
 }
 .potfolio-list-item {
   flex-basis: calc((100% - 60px) / 3);
+}
+.potfolio-list-item:hover,
+.potfolio-list-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .underimg {
   padding: 20px 24px;
