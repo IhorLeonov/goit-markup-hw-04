@@ -228,15 +228,15 @@ img {
   align-items: flex-start;
 }
 .benefits-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 30px;
-  width: 270px;
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
 }
 .benefits-box-img {
-  margin-left: 100px;
-  margin-top: 25px;
   width: 70px;
   height: 70px;
 }
@@ -326,6 +326,7 @@ img {
   gap: 10px;
   justify-content: center;
   padding-left: 0;
+  margin: 0;
 }
 .socials-link {
   display: flex;
@@ -480,11 +481,9 @@ footer {
 .contact-adress-list > li:last-child {
   margin-bottom: 0px;
 }
-.footer-list {
+.footer-conteiner {
   display: flex;
   align-items: baseline;
-  margin: 0;
-  padding: 0;
   list-style: none;
 }
 .footer-item:nth-child(2) {
